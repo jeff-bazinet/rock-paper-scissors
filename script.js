@@ -26,16 +26,16 @@ function getPlayerSelection() {
 
 function printWinText(player, computer) {
   alert(
-    `Player: ${player} - Computer: ${computer} - You Win! ${player} Beats ${computer}!`
+    `Player: ${player} --- Computer: ${computer} --- You Win! ${player} Beats ${computer}!`
   );
 }
 function printLossText(player, computer) {
     alert(
-    `Player: ${player} - Computer: ${computer} - You Lose! ${computer} Beats ${player}!`
+    `Player: ${player} --- Computer: ${computer} --- You Lose! ${computer} Beats ${player}!`
   );
 }
 function printTieText(player, computer) {
-    alert(`Player: - ${player} Computer: ${computer} - You Tie!`);
+    alert(`Player: ${player} --- Computer: ${computer} --- You Tie!`);
 }
 
 function comparePlayers(player, computer) {
