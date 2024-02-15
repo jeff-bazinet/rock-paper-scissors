@@ -25,17 +25,17 @@ function getPlayerSelection() {
 }
 
 function printWinText(player, computer) {
-  console.log(
+  alert(
     `Player: ${player} - Computer: ${computer} - You Win! ${player} Beats ${computer}!`
   );
 }
 function printLossText(player, computer) {
-  console.log(
+    alert(
     `Player: ${player} - Computer: ${computer} - You Lose! ${computer} Beats ${player}!`
   );
 }
 function printTieText(player, computer) {
-  console.log(`Player: - ${player} Computer: ${computer} - You Tie!`);
+    alert(`Player: - ${player} Computer: ${computer} - You Tie!`);
 }
 
 function comparePlayers(player, computer) {
