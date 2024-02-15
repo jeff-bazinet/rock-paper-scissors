@@ -81,3 +81,7 @@ function playGame(player, computer) {
 }
 
 playGame(getPlayerSelection(), getComputerChoice());
+playGame(getPlayerSelection(), getComputerChoice());
+playGame(getPlayerSelection(), getComputerChoice());
+playGame(getPlayerSelection(), getComputerChoice());
+playGame(getPlayerSelection(), getComputerChoice());
