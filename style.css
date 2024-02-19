@@ -38,7 +38,12 @@
     background-color: rgba(83, 159, 230, 0.548);
 }
 
-.results{
+.result-text{
 font-size: 25px;
 margin-bottom: 10px;
 }
+
+.result-score{
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
