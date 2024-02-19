@@ -1,5 +1,10 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 
+let buttonRock = document.querySelector('.rock-hand');
+let buttonPaper = document.querySelector('.paper-hand');
+let buttonScissors = document.querySelector('.scissors-hand');
+let resultsDiv = document.querySelector('.results');
+
 function getRandomNumber() {
   return Math.floor(Math.random() * 3);
 }
@@ -9,17 +14,13 @@ function getComputerChoice() {
 }
 
 function printWinText(player, computer) {
-  alert(
-    `Player: ${player} --- Computer: ${computer} --- You Win! ${player} Beats ${computer}!`
-  );
+  resultsDiv.textContent = `The computer chose ${computer}. You Win! ${player} Beats ${computer}!`;
 }
 function printLossText(player, computer) {
-  alert(
-    `Player: ${player} --- Computer: ${computer} --- You Lose! ${computer} Beats ${player}!`
-  );
+  resultsDiv.textContent = `The computer chose ${computer}. You Lose! ${computer} Beats ${player}!`;
 }
 function printTieText(player, computer) {
-  alert(`Player: ${player} --- Computer: ${computer} --- You Tie!`);
+  resultsDiv.textContent = `The computer chose ${computer}. You Tie!`;
 }
 
 function comparePlayers(player, computer) {
@@ -64,10 +65,12 @@ function playGame(player, computer) {
   comparePlayers(player, computer);
 }
 
-let buttonRock = document.querySelector('.rock-hand');
-let buttonPaper = document.querySelector('.paper-hand');
-let buttonScissors = document.querySelector('.scissors-hand');
-
-buttonRock.addEventListener('click', ()=>{playGame('Rock', getComputerChoice())});
-buttonPaper.addEventListener('click', ()=>{playGame('Paper', getComputerChoice())});
-buttonScissors.addEventListener('click', ()=>{playGame('Scissors', getComputerChoice())});
+buttonRock.addEventListener('click', () => {
+  playGame('Rock', getComputerChoice());
+});
+buttonPaper.addEventListener('click', () => {
+  playGame('Paper', getComputerChoice());
+});
+buttonScissors.addEventListener('click', () => {
+  playGame('Scissors', getComputerChoice());
+});

@@ -14,7 +14,8 @@
   /* background-color: rgb(255, 255, 255); */
   width: 800px;
   height: 350px;
-  border: 1px solid black;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .buttons button:hover{
-    background-color: rgba(70, 133, 228, 0.185);
+    background-color: rgba(83, 159, 230, 0.548);
 }
 
 .results{
