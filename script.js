@@ -8,22 +8,6 @@ function getComputerChoice() {
   return choices[getRandomNumber()];
 }
 
-function getPlayerSelection() {
-  let playerInput = prompt('Enter your choice - Rock, Paper or Scissors');
-  let playerChoice;
-
-  choices.forEach((choice) => {
-    if (choice.toLowerCase() === playerInput.toLowerCase()) {
-      playerChoice = choice;
-    }
-  });
-
-  if (!playerChoice) {
-    console.log();
-  }
-  return playerChoice;
-}
-
 function printWinText(player, computer) {
   alert(
     `Player: ${player} --- Computer: ${computer} --- You Win! ${player} Beats ${computer}!`
