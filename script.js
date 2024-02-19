@@ -18,8 +18,8 @@ function getPlayerSelection() {
     }
   });
 
-  if(!playerChoice){
-    console.log()
+  if (!playerChoice) {
+    console.log();
   }
   return playerChoice;
 }
@@ -30,12 +30,12 @@ function printWinText(player, computer) {
   );
 }
 function printLossText(player, computer) {
-    alert(
+  alert(
     `Player: ${player} --- Computer: ${computer} --- You Lose! ${computer} Beats ${player}!`
   );
 }
 function printTieText(player, computer) {
-    alert(`Player: ${player} --- Computer: ${computer} --- You Tie!`);
+  alert(`Player: ${player} --- Computer: ${computer} --- You Tie!`);
 }
 
 function comparePlayers(player, computer) {
@@ -80,8 +80,10 @@ function playGame(player, computer) {
   comparePlayers(player, computer);
 }
 
-playGame(getPlayerSelection(), getComputerChoice());
-playGame(getPlayerSelection(), getComputerChoice());
-playGame(getPlayerSelection(), getComputerChoice());
-playGame(getPlayerSelection(), getComputerChoice());
-playGame(getPlayerSelection(), getComputerChoice());
+let buttonRock = document.querySelector('.rock-hand');
+let buttonPaper = document.querySelector('.paper-hand');
+let buttonScissors = document.querySelector('.scissors-hand');
+
+buttonRock.addEventListener('click', ()=>{playGame('Rock', getComputerChoice())});
+buttonPaper.addEventListener('click', ()=>{playGame('Paper', getComputerChoice())});
+buttonScissors.addEventListener('click', ()=>{playGame('Scissors', getComputerChoice())});

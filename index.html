@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en"></head>
-        <title>Rock, Paper Scissors</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <script src="script.js"></script>
-    </body>
+  <head lang="en">
+    <title>Rock, Paper Scissors</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <button class="rock-hand">
+          <i class="fa-regular fa-hand-back-fist"></i>
+        </button>
+        <button class="paper-hand">
+          <i class="fa-regular fa-hand"></i>
+        </button>
+        <button class="scissors-hand">
+          <i class="fa-solid fa-scissors"></i>
+        </button>
+      </div>
+      <div class="results"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
